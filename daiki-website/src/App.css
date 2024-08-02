@@ -17,10 +17,6 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.navbar-collapse {
-  display: flex !important;
-}
-
 .logo {
   height: 50px;
 }
@@ -55,10 +51,6 @@ footer {
 @media (max-width: 992px) {
   .navbar-collapse {
     display: none;
-  }
-
-  .offcanvas {
-    display: block;
   }
 
   .offcanvas-end .navbar-nav {
