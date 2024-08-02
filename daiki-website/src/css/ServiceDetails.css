@@ -1,51 +1,86 @@
 .container {
-    margin-top: 10px;
-  }
-  
+  margin-top: 10px;
+}
+
+.service-title {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.service-image-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 2rem;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  max-height: 300px; 
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.img-fluid.hide {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.img-fluid.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.service-description {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+  text-align: left; 
+}
+/* Other styles */
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
   .service-title {
     font-size: 2rem;
-    margin-bottom: 5rem;
-    text-align: left;
   }
-  
-  .service-image-container {
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 2rem;
-  }
-  
+
   .img-fluid {
-    width: 100%;
-    max-width: 400px; 
-    height: auto;
-    max-height: 300px; 
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    max-width: 100%; 
+    max-height: 200px; 
   }
-  
+
   .service-description {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 5rem;
-    text-align: left; 
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
   }
-  
-  /* Media Query for small screens */
-  @media (max-width: 768px) {
-    .service-title {
-      font-size: 2rem;
-    }
-  
-    .img-fluid {
-      max-width: 100%; 
-      max-height: 200px; 
-    }
-  
-    .service-description {
-      font-size: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-    }
-  }
-  
+}
