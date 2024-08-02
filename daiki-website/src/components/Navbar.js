@@ -29,15 +29,21 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">Services</Link>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li><Link className="dropdown-item" to="/services/service1">Consulting</Link></li>
+                  <li><Link className="dropdown-item" to="/services/service2">Japanese Language</Link></li>
+                  <li><Link className="dropdown-item" to="/services/service3">Engineering </Link></li>
+                </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
-              </li>
+                <Link className="nav-link" to="/contact">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -57,8 +63,15 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={toggleOffcanvas}>Home</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/services" onClick={toggleOffcanvas}>Services</Link>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="offcanvasServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="offcanvasServicesDropdown">
+                <li><Link className="dropdown-item" to="/services/service1" onClick={toggleOffcanvas}>Consulting</Link></li>
+                <li><Link className="dropdown-item" to="/services/service2" onClick={toggleOffcanvas}>Japanese Language</Link></li>
+                <li><Link className="dropdown-item" to="/services/service3" onClick={toggleOffcanvas}>Engineering </Link></li>
+              </ul>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about" onClick={toggleOffcanvas}>About Us</Link>
@@ -74,4 +87,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

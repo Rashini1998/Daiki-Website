@@ -1,0 +1,51 @@
+.container {
+    margin-top: 10px;
+  }
+  
+  .service-title {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    text-align: left;
+  }
+  
+  .service-image-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 2rem;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    max-height: 300px; 
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .service-description {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 5rem;
+    text-align: left; 
+  }
+  
+  /* Media Query for small screens */
+  @media (max-width: 768px) {
+    .service-title {
+      font-size: 2rem;
+    }
+  
+    .img-fluid {
+      max-width: 100%; 
+      max-height: 200px; 
+    }
+  
+    .service-description {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
