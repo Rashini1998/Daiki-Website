@@ -1,0 +1,246 @@
+.about-container {
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.about-banner {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+  
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner-text  h1{
+    font-size: 3rem;
+}
+  
+.about-content {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+  
+.side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+}
+  
+.side-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; 
+    margin-left: 10px;
+}
+  
+.side-text {
+    max-width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.side-text h2 {
+    margin-top: 0;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.best{
+    color: #2c2c54;
+}
+.side-text p {
+    margin: 0;
+    text-align: justify;
+}
+
+.advice-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #eadddd; 
+    border-radius: 8px; 
+    border: 0.5px dashed rgb(83, 81, 81);
+}
+  
+.advice-section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.advice-section p {
+    margin: 0;
+    font-size: 15px;
+}
+.full-width-background {
+    width: 100%;
+    background-image: url('../images/old-wood.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    color: white;
+    margin-top: 50px;
+}
+
+.administration-section {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.Teacher-section{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    color: #2c2c54;
+    text-align: center;
+    margin-bottom: 50px;
+   
+}
+.Teacher-section h2{
+    margin-bottom: 100px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+.administration-section h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.administration-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.admin-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    padding-top: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+.admin-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.admin-image-container {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; 
+    height: 100px;
+   
+}
+
+.admin-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin-card h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #515151;
+}
+
+.admin-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #818181;
+    
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .side-by-side {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .side-image {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .administration-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .admin-card {
+      width: 100%;
+      max-width: 300px;
+    }
+    .admin-image-container {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+    }
+  
+    .admin-card h3 {
+        margin-top: 50px;
+    }
+
+    .side-text h2 {
+        font-size: 40px;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+    }
+
+    .advice-section h2 {
+        font-size: 16px;
+    }
+
+    .advice-section p {
+        font-size: 14px;
+    }
+
+    .administration-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .Teacher-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .Teacher-section {
+        padding: 10px;
+    }
+}
