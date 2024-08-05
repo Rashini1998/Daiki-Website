@@ -24,6 +24,7 @@
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .banner-text  h1{
     font-size: 3rem;
 }
@@ -57,6 +58,7 @@
     font-size: 80px;
     margin-bottom: 50px;
 }
+
 .best{
     color: #2c2c54;
 }
@@ -68,7 +70,7 @@
 .advice-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: #eadddd; 
+    background-color: white; 
     border-radius: 8px; 
     border: 0.5px dashed rgb(83, 81, 81);
 }
@@ -83,9 +85,10 @@
     margin: 0;
     font-size: 15px;
 }
+
 .full-width-background {
     width: 100%;
-    background-image: url('../images/old-wood.avif');
+    background-image: url('../images/depositphotos.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px 0;
@@ -97,21 +100,21 @@
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
+
 .Teacher-section{
     margin-top: 40px;
     padding: 20px;
     background-color: white;
     color: #2c2c54;
     text-align: center;
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px; 
 }
+
 .Teacher-section h2{
     margin-bottom: 100px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-
 
 .administration-section h2 {
     margin-top: 10px;
@@ -141,12 +144,13 @@
     padding-top: 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
 }
+
 .admin-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .admin-image-container {
     position: absolute;
     top: -50px; 
@@ -154,7 +158,6 @@
     transform: translateX(-50%);
     width: 100px; 
     height: 100px;
-   
 }
 
 .admin-image {
@@ -181,7 +184,6 @@
     
 }
 
-/* Media Query for small screens */
 @media (max-width: 768px) {
     .side-by-side {
       flex-direction: column;
